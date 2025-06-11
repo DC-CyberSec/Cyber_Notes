@@ -62,9 +62,9 @@ score, high_score = get_stats()
 
 Summary:
 
-    Parameters are placeholders in function definitions.
+Parameters are placeholders in function definitions.
 
-    Arguments are actual values passed during function calls.
+Arguments are actual values passed during function calls.
 
 Example:
 
@@ -80,7 +80,7 @@ Functions can assign default values to parameters.
 
 Rules:
 
-    Default parameters must come after required ones.
+Default parameters must come after required ones.
 
 Example:
 
