@@ -16,8 +16,8 @@ I'm currently preparing for the CompTIA Security+ certification and using this s
 
 ## 📅 My Documentation Flow
 
-1. Take rough notes in Notion while studying or hacking
-2. Clean and convert them into markdown
+1. Take rough notes in Obsidian while studying or hacking
+2. Clean them up and review them
 3. Push everything to this repo to track and reinforce my progress
 
 ---
