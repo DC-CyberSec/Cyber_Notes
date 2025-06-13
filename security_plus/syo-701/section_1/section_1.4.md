@@ -201,3 +201,119 @@
 
 # 🎛️ Obfuscation
 
+- The process of making something unclear
+	- Makes things more difficult to understand
+	- Not impossible if you know what to understand
+- Hide information in plain sight
+	- Have to know how it was hidden
+
+### 🖌️ Steganography
+
+- Greek for "concealed writing"
+- Hide data in images
+	- Security through obscurity
+- Message is invisible but still there
+- Document containing the data is the cover-text
+- Network-based
+	- Embedded messages in TCP packets
+- Image based
+- Watermarking
+	- Hide messages in invisible water marks
+	- Yellow dots on printers
+- Audio based
+	- Hide information within audio file or track
+- Video based
+	- Can be used to hide lots of information
+
+### 📱 Tokenization
+
+- Replace sensitive data with a non-sensitive placeholder
+- Commonly used with credit card processing
+	- Use temp tokens during payments
+	- Attackers can't capture the card number and use it later
+- Not encryption or hashing
+	- No mathematical relation
+
+### 🤿 Data Masking
+
+- Hides some of the original data
+- Protects PII and sensitive data
+- Only hidden from view
+	- Data can still be in storage
+	- Control the view based on permissions
+- Different techniques
+	- Substituting, shuffling, encrypting, masking, etc
+
+
+# 🖊️ Hashing/Digital Signatures
+
+### 🍳 Hashes
+
+- Represent data as a short string of text
+	- Can be called message digest or fingerprint
+- One way 
+	- Impossible to recover original message from the digest
+- Used for storing passwords/confidentiality
+- Can verify downloads (Integrity)
+- Can be a digital signature
+	- Authentication, non-repudiation, and integrity
+- SHA256 hash
+	- 256 bit/64 hexadecimal characters
+- Collision
+	- Hashes should be unique
+	- Inputs shouldn't ever create the same hash if they do its called a collision
+	- Practically probably wont happen
+	- Example
+		- MD5 algorithm
+- Practicality
+	- Verify downloaded files
+		- Compare downloaded file hash with posted hash
+	- Password storage
+		- Instead of strong passwords store salted hashes
+		- Compare during authentication
+		- Actual password is not shown
+- Salting
+	- Random data that's added during the hashing process to a password
+	- Every user gets their own random salt
+		- Commonly stored with the password
+	- Protects from rainbow tables
+		- Rainbow tables are tables with every possible input and every possible hash associated with those inputs
+	- Slows down brute forcing
+	- Salting allows different hashing to be created from the same password
+
+### 🖊️ Digital Signatures
+
+- Prove the message was not changed (Integrity)
+- Prove the source of the message (Authentication)
+- Make sure the signature isn't fake (Non-repudiation)
+- Signed with a private key
+	- Only signed by one person
+- Verify with a public key
+	- Any change in the message will invalidate the signature
+
+
+# ⬛ Blockchain Technology
+
+- Distributed ledger
+	- Used to keep track of transactions
+- Everyone on the blockchain can manage this ledger
+	- Record and replicates to anyone
+- Used for anything that requires keeping track of transactions
+	- Payment processing
+	- Digital identification
+	- Supply chain monitoring
+	- Digital voting
+- Process
+	1. Transaction occurs
+	2. Results sent to everyone
+	3. Results added to a larger block of all transaction results
+	4. Hash is added to the block to add integrity
+	5. Copy is sent to everyone (all nodes)
+	6. Transaction is complete
+	7. If the transaction is later modified the hash is invalidated
+	8. Everyone becomes aware of the invalid block
+
+
+# 🎫 Certificates
+
+
