@@ -5,7 +5,7 @@
 	- Lots of planning and decisions
 - Associated with binding public keys to people or devices
 	- In conjunction with Certificate Authority
-	- Based around trust (TEST)
+	- Based around trust
 
 ### 🔠 Symmetric Encryption
 
