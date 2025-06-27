@@ -25,6 +25,7 @@ Summary:
 Use - to represent negative values.
 
 ## 🔠 Basic Variable Types
+
 String
 
 name1 = 'Alice'
