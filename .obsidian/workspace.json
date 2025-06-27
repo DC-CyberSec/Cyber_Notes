@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming/Python/python_testing.debugging.md",
+                "file": "security_plus/syo-701/section_2/section_2.1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "python_testing.debugging"
+              "title": "section_2.1"
             }
           }
         ]
@@ -181,12 +181,13 @@
   },
   "active": "93fc56fbf1054a39",
   "lastOpenFiles": [
-    "Programming/Python/python_scope.md",
+    "security_plus/syo-701/section_1/section_1.4.md",
+    "security_plus/syo-701/section_2/section_2.1.md",
+    "security_plus/syo-701/section_1/section_1.1.md",
     "Programming/Python/python_testing.debugging.md",
+    "Programming/Python/python_scope.md",
     "Programming/Python/python_variables.md",
     "Programming/Python/python_functions.md",
-    "security_plus/syo-701/section_2/section_2.1.md",
-    "security_plus/syo-701/section_1/section_1.4.md",
     "security_plus/syo-701/section_2",
     "htbacademy/virtualization.md"
   ]
