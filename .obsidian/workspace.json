@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "security_plus/syo-701/section_1/section_1.4.md",
+                "file": "security_plus/syo-701/section_2/section_2.1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "section_1.4"
+              "title": "section_2.1"
             }
           }
         ]
@@ -179,9 +179,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "93fc56fbf1054a39",
+  "active": "b6b5f877a8b54568",
   "lastOpenFiles": [
-    "htbacademy/virtualization.md",
-    "security_plus/syo-701/section_1/section_1.4.md"
+    "security_plus/syo-701/section_1/section_1.4.md",
+    "security_plus/syo-701/section_2/section_2.1.md",
+    "security_plus/syo-701/section_2",
+    "htbacademy/virtualization.md"
   ]
 }
