@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming/Python/python_scope.md",
+                "file": "Programming/Python/python_testing.debugging.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "python_scope"
+              "title": "python_testing.debugging"
             }
           }
         ]
@@ -179,10 +179,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "93fc56fbf1054a39",
+  "active": "b6b5f877a8b54568",
   "lastOpenFiles": [
-    "Programming/Python/python_variables.md",
     "Programming/Python/python_scope.md",
+    "Programming/Python/python_testing.debugging.md",
+    "Programming/Python/python_variables.md",
     "Programming/Python/python_functions.md",
     "security_plus/syo-701/section_2/section_2.1.md",
     "security_plus/syo-701/section_1/section_1.4.md",
