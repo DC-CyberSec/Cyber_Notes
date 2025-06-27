@@ -317,3 +317,157 @@
 # 🎫 Certificates
 
 
+Digital certificate 
+
+Public key certificate 
+Binds a public key with a digital signature
+And other details about the key holder
+
+Digital signatures add trust 
+PKI uses CAs for additional trust
+Web of trust adds users for additional trust
+
+Certificate creation can be built into os 
+Microsoft Windows domain services
+Third party options
+
+X.509 
+Standard format for certificates 
+
+Provides details
+Serial number
+Version
+Signature algo
+Issuer
+Name of cert holder
+Public key
+Extentsions
+Etc
+
+//
+
+Root of trust  
+
+Everything in IT security requires trust
+Foundational aspect
+
+How to build trust from unknown?
+Have to have approval from something or someone trust worthy
+
+Refer to the root of trust
+Inherently trusted component
+Hardware, software, firmaware, or other
+Hardware security module, Secure Enclave, certificate authority
+
+//
+
+Certificate Authority
+
+Basis of providing trust when visiting or interacting with unknown entities
+
+Can be a third party or built in
+Can be in any browser 
+Purchases the website certificate to make it trusted by all browsers
+
+Certificate authorities sign the website certificates
+If you trust the CA you trust the website
+Confirms certificate owner
+Additional verification info may be required
+Rea time verification 
+
+//
+
+Certificate signing requests
+
+Create a key pair, then send the public key to the ca to be signed
+Creates a CSR
+
+THE CA validates the request
+Confirms dns emails and website ownership
+
+CA digitally sign the cert
+Returns it to applicant
+
+//
+
+Private CAS 
+
+You’re your own CA
+Built in house 
+Devices must trust the internal CA
+
+Needed for medium to large orgs
+Lots of servers and privacy requirements 
+
+Implement as part of your overall computing strategies 
+
+//
+
+Self signed certificates
+
+Internal certs don’t need to be signed by a public CA
+Your company only
+No need to purchase trust for devices that already trust you
+
+Built your own CA
+ISSUE own certificates signed by your own CA
+
+Install the CA cert on all devices
+Now trust any certificates signed by internal CA
+Works the same as a cert you purchases
+
+//
+
+Wildcard certificate 
+
+Subject alternative name (SAN)
+Allows a certificate to support many different y domains 
+Extension of the X.509 cert
+Lists additional identification information
+
+Wildcard domain
+Certificates are based on the name of the server
+Applies to all server names in a domain
+
+//
+
+Key revocation
+
+Certifcate revocation list (Crl)
+Maintained by CA
+Can contain many revocations in one large file
+
+Many different reasons 
+Changes all the time 
+Revoke certificates in case of shutting down domains or attacks
+
+CVE-2014-0160 - April 2014
+Heart bleed
+OpenSSL flaw put the private key of affected web servers at risk
+OpenSSL was patched, every web server cert was replaced 
+Older certs were moved to CRL
+
+//
+
+OCSP stapling
+
+Online certificate status protocol 
+Provides scalability
+
+The CA is responsible for responding to all client OSCP requests 
+May not scale well
+
+Instead have the status verified by certificate holder 
+Status information is stored on the certificate holder’s server 
+
+OCSP status is stapled into the SSL/TLS handshake 
+Digitally signed by the CA
+
+Most browsers today support OSCP 
+
+Messages usually sent to an OSCP responder via HTTP
+Easy to support over internet links
+More efficient than downloading a CRL
+
+Some old browsers won’t support OSCP
+Someone support but don’t do proper checks
