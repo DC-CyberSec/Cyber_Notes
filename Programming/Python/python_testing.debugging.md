@@ -16,3 +16,20 @@ There are two reasons for this change:
 
 Summary: 
 You write some code, run it, and if it doesn't work, you fix the bugs. You repeat this process until you're confident that your code works as expected.
+
+The goal is to write _small amounts of code_, and then _test_ each bit of code to make sure it's doing what we expect before moving on. **Trying to write entire programs at once is a recipe for pain and suffering.** The goal is to write a few lines, test them, and then write a few more lines, and repeat until you're done.
+
+#### 〰️ Stack Trace
+
+Summary:
+A stack trace (or "traceback") is a scary-looking error message that the Python interpreter prints to the console when it encounters certain problems. Stack traces are most common (at least for you right now) when you're trying to run invalid Python code.
+
+Example:
+
+PythonError: Traceback (most recent call last):
+  File "<exec>", line 17, in <module>
+  File "<string>", line 1, in <module>
+  File "/home/pyodide/main.py", line 3
+    msg = f"You have {strength} strength, {wisdom} wisdom, and {dexterity} dexterity for a total of {total} stats.
+                                                            ^
+IndentationError: unindent does not match any outer indentation level
