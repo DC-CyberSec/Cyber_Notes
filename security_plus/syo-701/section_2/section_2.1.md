@@ -53,7 +53,7 @@
 
 - Run premade scripts without knowledge of how they work
 - Motivated by the hunt
-	- Disruption data exfiltration philosophical reasons
+	- Disruption, data exfiltration, philosophical reasons
 - Can be internal or external
 - Not very sophisticated 
 	- Limited resources 
@@ -61,136 +61,61 @@
 
 ##### 💻 Hacktivist
 
-  
-
 - A hacker with a purpose
-
-- Revenge disruption philosophical or political reasons
-
-  
-
+	- Revenge disruption philosophical or political reasons
 - Often external
-
-- Could potentially be an insider threat
-
-  
-
+	- Could potentially be an insider threat
 - Can be sophisticated 
-
-- Very specific attacks
-
-- Dos website defacing private document release
-
-  
-
+	- Very specific attacks
+	- Dos, website defacing, private document release
 - Funding is usually limited 
+	- Some fundraising options
 
-- Some fundraising options
+##### 🚪 Insider threat 
 
-  
-
-- //
-
-  
-
-- Insider threat 
-
-  
-
-- Didfilucilt to locate
-
-  
-
+- Difficult to locate
 - More than just passwords on sticky notes
-
-- Motivated by revenge, financial gain
-
-  
-
+	- Motivated by revenge, financial gain
 - Extensive resources
-
-- Uses organizations resources against it 
-
-  
-
+	- Uses organizations resources against it 
 - An internal threat
-
-- Parasite
-
-  
-
+	- Parasite
 - Medium level of sophistication 
+	- Knows institutional knowledge
+	- Can identify vulnerable systems 
+	- Knows what to hit
 
-- Knows institutional knowledge
-
-- Can identify vulnerable systems 
-
-- Knows what to hit
-
-  
-
-- //
-
-  
-
-- Organizaed crime 
-
-  
+##### 🕴️ Organized crime 
 
 - Professional criminals
-
-- Motivated by profit
-
-- Almost always external
-
-  
-
+	- Motivated by profit
+	- Almost always external
 - Very sophisticated 
+	- Best hacking money can buy
+- Crime that is organized
+	- One person hacks, one person manages, one person sells the data, another handles support 
 
-- Best hacking money can buy
-
-  
-
-- Crime that is organizaed
-
-- One person hacks one person manages one person sells the data another handles support 
-
-  
-
-- //
-
-  
-
-- Shadow IT
-
-  
+##### 🕶️ Shadow IT
 
 - Goes rogue
-
-- Works around internal IT
-
-- Builds own infrastructure 
-
-  
-
-- IT can put up roadblocks but shadow IT isnt affected by these
-
-- Use the cloud
-
-- Can innovate 
-
-  
-
-- Limited resrouces 
-
-- Company budget
-
-  
-
+	- Works around internal IT
+	- Builds own infrastructure 
+- IT can put up roadblocks but shadow IT isn't affected by these
+	- Use the cloud
+	- Can innovate 
+- Limited resources 
+	- Company budget
 - Medium sophistication 
+	- May not have training or knowledge 
 
-- May not have training or knowledge 
 
-  
 
-Insert table
+| **Threat Actor** |              | Attributes     |                    | Possible Motives                                    |
+| :--------------: | ------------ | -------------- | ------------------ | --------------------------------------------------- |
+|                  | **Location** | **Resources**  | **Sophistication** |                                                     |
+|   Nation State   | External     | Extensive      | Very High          | Data Exfil, Revenge, War, Disruption, Philosophical |
+|    Unskilled     | External     | Limited        | Very Low           | Data Exfil, Disruption, Philosophical               |
+|    Hacktivist    | External     | Some funding   | Can be high        | Revenge, Disruption, Philosophical                  |
+|  Insider Threat  | Internal     | Many resources | Medium             | Revenge, Financial Gain                             |
+| Organized Crime  | External     | Extensive      | Very High          | Financial Gain                                      |
+|    Shadow IT     | Internal     | Many resources | Limited            | Revenge, Philosophical                              |
