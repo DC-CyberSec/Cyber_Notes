@@ -162,14 +162,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b6b5f877a8b54568",
+  "active": "93fc56fbf1054a39",
   "lastOpenFiles": [
-    "Programming/Python/python_computing.md",
-    "security_plus/syo-701/section_2/section_2.2.md",
-    "Programming/Python/python_testing.debugging.md",
     "security_plus/syo-701/section_2/section_2.1.md",
     "security_plus/syo-701/section_1/section_1.4.md",
+    "security_plus/syo-701/section_1/section_1.3.md",
     "security_plus/syo-701/section_1/section_1.1.md",
+    "security_plus/syo-701/section_2/section_2.2.md",
+    "security_plus/syo-701/section_1/section_1.2.md",
+    "Programming/Python/python_computing.md",
+    "Programming/Python/python_testing.debugging.md",
     "Programming/Python/python_scope.md",
     "Programming/Python/python_variables.md",
     "Programming/Python/python_functions.md",
