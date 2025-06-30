@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "section_2.2.md",
+                "file": "security_plus/syo-701/section_2/section_2.2.md",
                 "mode": "source",
                 "source": false
               },
@@ -162,10 +162,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "93fc56fbf1054a39",
+  "active": "b6b5f877a8b54568",
   "lastOpenFiles": [
     "Programming/Python/python_computing.md",
-    "section_2.2.md",
+    "security_plus/syo-701/section_2/section_2.2.md",
     "Programming/Python/python_testing.debugging.md",
     "security_plus/syo-701/section_2/section_2.1.md",
     "security_plus/syo-701/section_1/section_1.4.md",
