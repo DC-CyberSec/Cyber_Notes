@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming/Python/python_computing.md",
+                "file": "section_2.2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "python_computing"
+              "title": "section_2.2"
             }
           }
         ]
@@ -48,23 +48,6 @@
             }
           },
           {
-            "id": "0ae6e73c011155b6",
-            "type": "leaf",
-            "state": {
-              "type": "search",
-              "state": {
-                "query": "tag:#-3",
-                "matchingCase": false,
-                "explainSearch": false,
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical"
-              },
-              "icon": "lucide-search",
-              "title": "Search"
-            }
-          },
-          {
             "id": "a9dc3328f365b432",
             "type": "leaf",
             "state": {
@@ -74,8 +57,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -182,8 +164,9 @@
   },
   "active": "93fc56fbf1054a39",
   "lastOpenFiles": [
-    "Programming/Python/python_testing.debugging.md",
     "Programming/Python/python_computing.md",
+    "section_2.2.md",
+    "Programming/Python/python_testing.debugging.md",
     "security_plus/syo-701/section_2/section_2.1.md",
     "security_plus/syo-701/section_1/section_1.4.md",
     "security_plus/syo-701/section_1/section_1.1.md",
