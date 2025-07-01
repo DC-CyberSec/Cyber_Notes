@@ -95,9 +95,9 @@
 - Outdated operating systems 
 	- Eventually even the manufacturer gives up
 - A single system could be an entry
-	- Keep your records and inveotry up to date
+	- Keep your records and inventory up to date
 
-### 🚠 Unsercure network vectors
+### 🚠 Unsecured network vectors
 
 - The network connects everything 
 	- Ease of access for attackers
@@ -117,7 +117,7 @@
 - Every open port is an opportunity for attacks 
 	- Application vulnerability or misconfiguration 
 - Every application has its own port
-	- More services more open ports less security
+	- More services, more open ports, less security
 - Firewall rules 
 	- Must allow traffic to open ports 
 	- Limits attack surface 
@@ -203,7 +203,7 @@
 
 ###  ⚔️ Eliciting information
 
-- Extracitng information from the victim
+- Extracting information from the victim
 	- May not realize it
 	- Hack the human
 - Often used in Vishing
@@ -270,7 +270,7 @@
 - Influence campaigns 
 	- Sway public opinion on political and social issues
 - Nation state actors
-	- Divide distract and persuade 
+	- Divide, distract, and persuade 
 - Advertising
 	- Voice an opinion 
 - Social media 
