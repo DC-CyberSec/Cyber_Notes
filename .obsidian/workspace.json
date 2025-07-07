@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "security_plus/syo-701/section_2/section_2.3.md",
+                "file": "Programming/Python/python_computing.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "section_2.3"
+              "title": "python_computing"
             }
           }
         ]
@@ -55,6 +55,23 @@
               "state": {},
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
+            }
+          },
+          {
+            "id": "863915c53b0ec534",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           }
         ]
@@ -162,19 +179,20 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b6b5f877a8b54568",
+  "active": "93fc56fbf1054a39",
   "lastOpenFiles": [
-    "security_plus/syo-701/section_2/section_2.2.md",
+    "Programming/Python/python_basics.md",
+    "Programming/Python/python_variables.md",
+    "Programming/Python/python_testing.debugging.md",
+    "Programming/Python/python_scope.md",
+    "Programming/Python/python_computing.md",
     "security_plus/syo-701/section_2/section_2.3.md",
+    "security_plus/syo-701/section_2/section_2.2.md",
     "security_plus/syo-701/section_2/section_2.1.md",
     "security_plus/syo-701/section_1/section_1.4.md",
     "security_plus/syo-701/section_1/section_1.3.md",
     "security_plus/syo-701/section_1/section_1.1.md",
     "security_plus/syo-701/section_1/section_1.2.md",
-    "Programming/Python/python_computing.md",
-    "Programming/Python/python_testing.debugging.md",
-    "Programming/Python/python_scope.md",
-    "Programming/Python/python_variables.md",
     "Programming/Python/python_functions.md",
     "security_plus/syo-701/section_2",
     "htbacademy/virtualization.md"
