@@ -174,3 +174,121 @@ Prints 1
 print(0b0101)
 Prints 5
 
+
+### ⚒️ Bitwise “&” Operator
+
+Summary:
+Bitwise operators are similar to logical operators, but instead of operating on boolean values, they apply the same logic to all the bits in a value by column. For example, say you had the numbers `5` and `7` represented in binary. You could perform a bitwise AND operation and the result would be `5`.
+
+Example:
+
+0101 is 5
+0111 is 7
+
+
+0101
+&
+0111
+
+equals
+
+0101
+
+
+Summary:
+A `1` in binary is the same as `True`, while `0` is `False`. So really a bitwise operation is just a bunch of logical operations that are completed in tandem by column.
+
+Example:
+
+0 & 0 = 0
+
+1 & 1 = 1
+
+1 & 0 = 0
+
+
+Summary:
+Ampersand `&` is the bitwise AND operator in Python. "AND" is the _name_ of the bitwise operation, while ampersand `&` is the _symbol_ for that operation. For example, `5 & 7 = 5`, while `5 & 2 = 0`.
+
+Example:
+
+0101 is 5
+0010 is 2
+
+
+0101
+&
+0010
+
+equals
+
+0000
+
+
+
+0b0101 & 0b0111
+equals 5
+
+binary_five = 0b0101
+binary_seven = 0b0111
+binary_five & binary_seven
+equals 5
+
+
+### 🛠️ Bitwise “|” Operator
+
+Summary:
+As you may have guessed, the bitwise "or" operator is similar to the bitwise "and" operator in that it works on binary rather than boolean values. However, the bitwise "or" operator "or"s the bits together. Here's an example:
+
+Example:
+
+0101 is 5
+0111 is 7
+
+
+0101 | 0111
+
+equals
+
+0111
+
+
+Summary:
+A `1` in binary is the same as `True`, while `0` is `False`. So a bitwise operation is just a bunch of logical operations that are completed in tandem. When two binary numbers are "or"ed together, the result has a `1` in any place where _either_ of the input numbers has a `1` in that place.
+
+`|` is the bitwise "or" operator in Python. `5 | 7 = 7` and `5 | 2 = 7` as well!
+
+Example:
+
+0101 is 5
+0010 is 2
+
+
+0101 | 0010
+
+equals
+
+0111
+
+
+### ➡️ Converting Binary
+
+Summary:
+The built-in int function can convert a binary string to an integer. It takes a second argument that specifies the base of the number (binary is base 2). For example:
+
+Example:
+
+"100" -> 4
+"101" -> 5
+"10010" -> 18
+
+
+this is a binary string
+binary_string = "100"
+
+convert binary string to integer
+num = int(binary_string, 2)
+print(num)
+4
+
+
