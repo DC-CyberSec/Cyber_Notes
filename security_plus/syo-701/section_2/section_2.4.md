@@ -297,4 +297,88 @@
 
 # 💥 DNS Attacks
 
+### ☠️ DNS Poisoning
 
+- Modify the DNS server
+	- Requires some good hacking
+- Modify the client host file
+	- Host files take precedent over DNS queries
+- Send a fake response to a valid DNS request
+	- Requires a redirection of the original request or the resulting response
+	- Real time redirection
+	- On path attack
+
+### ⛵ Domain Hijacking
+
+- Get access to the domain registration and you control where the traffic flows
+	- No need to touch actual servers
+	- Determines the DNS names and DNS IP addresses
+- Many ways to gain access
+	- Brute force
+	- Social engineering
+	- Gain access to the email
+	- Usual things
+- October 22, 2016 - Domain Registrations of 36 domains are changed
+	- Brazilian bank
+	- Desktop domains, mobile domains, and more
+	- Under hacker control for 6 hours
+	- Became the bank
+	- 5 million customers, 27 billion USD in assets
+
+### 🚙 URL Hijacking
+
+- Make money from mistakes
+	- Lot of advertising online
+- Sell the badly spelled domain to the actual owner
+- Redirect to a competitor
+- Phishing site
+- Infect with a drive by download
+- Typosquatting/brandjacking
+	- Take advantage of poor spelling
+- Outright misspelling
+- Different top-level domain
+
+
+# 📟 Wireless attacks
+
+- Wireless authentication
+	- Wireless DoS attack
+- 802.11 wireless includes a number of management features
+	- Frames that make everything work
+	- Never seen
+- Important to the operation of 802.11 wireless
+	- How to find access points, manage QoS, associate/disassociate with an access point, etc.
+- Original wireless standards did not add protection for management frames
+	- In the clear, no authentication or validation
+- Protection against
+	- IEEE already addressed the problem
+		- Updates included with 802.11ac
+	- Some of the important management frames are encrypted
+		- Disassociate, deauthenticate, channel switch announcements, etc.
+	- Not everything is encrypted
+		- Beacons, probes, authentication, association
+
+### 📻 RF Jamming
+
+- DoS
+	- Prevent wireless communication
+- Transmit interfering wireless signals
+	- Decrease the signal to noise ratio at the receiving device
+	- The receiving device cant hear the good signal
+- Sometimes not intentional
+	- Interference
+	- Microwave oven, fluorescent lights
+
+### 📡 Wireless Jamming
+
+- Different types
+	- Constant, random bits / Constant, legitimate frames
+	- Data sent at random times - random data and legitimate frames
+	- Reactive jamming - only when someone else tries to communicate
+- Needs to be close by
+	- Difficult from a distance
+- Time to go fox hunting
+	- Directional antenna, attenuator
+
+
+# 🏞️ On Path Attacks
