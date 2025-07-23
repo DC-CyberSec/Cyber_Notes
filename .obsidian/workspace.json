@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "85014f4700c26e15",
+        "id": "0268827cf288ccd2",
         "type": "tabs",
         "children": [
           {
-            "id": "b056ecd505cde97b",
+            "id": "a29581972a537f6a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "security_plus/syo-701/section_2/section_2.4.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "section_2.4"
             }
           }
         ]
@@ -209,9 +213,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b056ecd505cde97b",
+  "active": "a29581972a537f6a",
   "lastOpenFiles": [
     "security_plus/syo-701/section_2/section_2.3.md",
+    "security_plus/syo-701/section_2/section_2.4.md",
     "Programming/Python/python_computing.md",
     "Programming/Python/python_basics.md",
     "security_plus/syo-701/section_1/section_1.2.md",
