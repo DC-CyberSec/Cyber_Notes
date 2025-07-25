@@ -1,7 +1,7 @@
 
 # 👿 Malware
 
-- Malicous Sofwatre
+- Malicious Software
 	- Bad
 - Gather info
 	- Keystrokes
@@ -24,7 +24,7 @@
 
 - Work together
 	- Worm takes advantage of vulnerability
-	- then installs additional remote access backdoor malware
+	- Then installs additional remote access backdoor malware
 	- Additional malware is installed later
 - Must run a program
 	- Email link - Don't click links
@@ -382,3 +382,353 @@
 
 
 # 🏞️ On Path Attacks
+
+- How can an attacker watch without you knowing
+	- Formerly known as a man in the middle attack
+- Redirects your traffic
+	- Passes it on to a destination
+	- No idea when traffic is redirected
+- ARP Poisoning
+	- On path attack on the local IP subnet
+	- No security
+- What if the middleman was on the same computer as the victim?
+	- Malware/Trojan does all the proxy work
+	- Man-in-the-browser
+- Huge advantages
+	- Easy to proxy encrypted traffic
+	- Everything looks normal
+- Malware in your browser waits for you to login
+	- Cleans you out
+
+
+# 📹 Replay Attacks
+
+- Useful information is transmitted over the network
+	- Hackers take advantage of this
+- Need access to raw network data
+	- Network tap, ARP poisoning, Malware
+- The gathered information helps the attacker
+	- Replay the data to appear as someone else
+- Not an on path attack
+	- Replay doesn't require the original workstation
+- Avoid with salting or encryption
+	- Can't capture session IDs if they cant see it
+	- Encryption adds load on HTTPS server
+	- Firefox extensions: HTTPS Everywhere, Force TLS
+	- Many sites are HTTPS only now
+- Encrypt end-to-end
+- Encrypt end-to-somewhere
+	- Avoid capture over a local wireless network
+	- In the clear for part of the journey
+	- Personal VPN 
+
+### 🍪 Browser cookies and session IDs
+
+- Cookies
+	- Information stored on your computer by the browser
+- Used for tracking, personalization, session management
+	- Not executable, not generally a security risk
+		- Unless someone gets access
+- Could be a privacy risk
+	- Lots of personal data
+- Session IDs are often stored in the cookies
+	- Maintains sessions across multiple browser sessions
+
+### ⚽ Header Manipulation
+
+- Information gathering
+	- Wireshark, Kismet
+- Exploits
+	- XSS
+- Modify headers
+	- Tamper, Firesheep, Scapy
+- Modify cookies
+	- Cookie browser add-ons
+
+
+# 🕴️ Malicious Code
+
+- Attackers use any opportunity
+	- Many types of malicious code
+- Different forms
+	- Executable, scripts, macro viruses, worms, Trojans, etc.
+- Protection comes from many different sources
+	- Anti-malware
+	- Firewall
+	- Continuous updates
+	- Secure computing habits
+- Examples
+	- WannaCry ransomware
+		- Executable exploited a vulnerability in Windows SMBv1
+		- Arbitrary code execution
+	- British Airways XSS
+		- 22 lines of malicious JavaScript code on pages used to checkout
+		- Information stolen from 380,000
+	- Estonian Central Health Database
+		- SQL injection
+		- Breached all healthcare information for an entire country
+
+
+# 📱 Application Attacks
+
+### 💉 Injection Attack (see 2.3)
+
+
+### 🏞️ Buffer Overflows (see 2.3)
+
+
+### 📼 Replay Attack (see above)
+
+
+### 🛫 Privilege Escalation
+
+- Gain higher-level access to a system
+	- Exploit a vulnerability
+	- Might be a bug or design flaw
+- Higher-level access means more capabilities
+	- A concern for attackers
+- High-priority vulnerability patches
+	- Get it fixed very quickly
+- Horizontal privilege escalation
+	- User A can access User B's resources
+- Update anti-virus/anti-malware software 
+- Data Execution Prevention
+	- Only data in executable areas can run
+- Address space layout randomization
+	- Prevent a buffer overrun at a known memory address
+
+### ❌ Cross-Site Requests
+
+- Cross-site requests are common and legit
+	- You visit a website
+	- The browser loads the content from the server
+	- Browser loads videos and pictures
+	- Different servers used to load
+- HTML on the website directs requests from your browser
+	- Normal and expected
+	- Most of these are unauthenticated requests
+- Website pages consist of client-side code and server-side code
+	- Moving parts
+- Client-side
+	- Renders the page 
+	- HTML, JS
+- Server-side
+	- Performs request from client
+	- HTML, PHP
+	- Transferring funds
+	- Post media
+
+### ☄️ Cross-site Request Forgery
+
+- One-click attack, session riding
+	- XSRF, CSRF (sea surf)
+- Takes advantage of the trust a web application has for a user
+	- Website trusts your browser
+	- Requests are made without consent or knowledge
+	- Attacker posts a Facebook status on your account
+- Significant web application development oversight
+	- The application should have anti-forgery techniques added
+	- Usually a cryptographic token to prevent forgery
+
+### 🚈 Directory Traversal / Path Traversal
+
+- Read files form a web server that are outside of the website's file directory
+- Users shouldn't be able to browse the Windows folder
+- Web server software vulnerability
+	- Won't stop users from browsing past the web server root
+- Web Application code vulnerability
+	- Take advantage of poorly written code
+
+
+# 🔏 Cryptographic Attacks
+
+- You encrypt data and send it off
+	- Is it secure
+	- How do you know
+- The attacker doesn't have the key
+	- So they break the cryptography
+- Finding ways to undo the security
+	- Many potential shortcomings
+	- Problem is often the implementation
+
+### 🎂 Birthday Attack
+
+- Hash collision
+	- The same hash for two different plaintexts
+	- Found through brute force
+- Attacker will generate multiple versions of plaintext to match the hashes
+	- Protect with large has output sizes
+- Hash digests are supposed to be unique
+	- Different input data shouldn't create the same hash
+- MD5 hash
+	- Message digest Algorithm 5 
+	- Published 1992
+	- Collisions found 1996
+- December 2008: Researchers created CA certificate that appeared legitimate when MD5 is checked
+	- Built other certificates that appeared to be legit and issued by RapidSSL
+
+### 🔽 Downgrade Attack
+
+- Instead of using perfectly good encryption, use something that isn't so great
+	- Force systems to downgrade their security
+- SSL stripping
+	- Combines an on path attack with a downgrade attack
+	- Difficult to implement, but big rewards
+	- Attacker must sit in the middle of the conversation
+	- Victims browser page isn't encrypted
+	- Strips the S from HTTPS
+
+
+# 🔑 Password Attacks
+
+- Some applications store passwords in the clear
+	- Not encrypted
+	- Rare
+- Do not store passwords as a plaintext
+	- Anyone with access to the password file or database has the credentials
+- What to do 
+	- Get better application
+- Hash a password
+	- Hashes represent data as a fixed-length string of text
+		- Digest or fingerprint
+	- Will not have a collision
+	- One-way trip
+		- No way to reverse engineer
+	- Stored in a file
+		- Different across OS
+
+### 🚿 Spraying Attack
+
+- Try to login with an incorrect password
+	- Eventually locked out
+- Are some common passwords
+- Attack an account with the top three most common password
+	- If this doesn't work move on to next account
+	- No lockouts, no alarms, no alerts
+
+### 🥾 Brute Force
+
+- Try every possible password combination
+- Might take some time
+	- Strong hashing algorithms slow it down
+- Receive the hash
+- Match it to every possible iteration of passwords til correct
+- Online
+	- Very slow
+	- Most accounts will lockout
+- Offline
+	- Obtain list of users and hashes
+	- Calculate password hash and compare to stored hash
+	- Large computational resource requirements
+
+
+# ⚠️ Indicators of Compromise
+
+- An event that indicates an intrusion
+	- Confidence is high
+- Indicators
+	- Unusual activity on network
+	- Change to file hashes
+	- Irregular international traffic
+	- Changes to DNS data
+	- Uncommon login patterns
+	- Spikes of read requests to certain files
+
+### 🔒 Account Lockout
+
+- Credentials are not working
+	- Wasn't you
+- Exceeded login attempts
+	- Account is auto locked
+- Account was administratively disabled
+	- Large concern
+- Might be a larger plan
+	- Attacker locks account
+	- Calls pretending to be user needing unlock
+
+### 2️⃣ Concurrent Session Usage
+
+- Can't be two places at once
+- Multiple logins from multiple locations
+	- Interactive access from a single user
+- Can be difficult to track down
+	- Multiple devices and desktops
+	- Automated processes
+
+### 🧱 Blocked Content
+
+- An attacker wants to stay as long as possible
+	- System is unlocked
+	- Keep it that way
+- Probably a patch available
+	- Play keep away
+- Blocked content
+	- Auto-update connections
+	- Links to security patches
+	- Third party anti-malware sites
+	- Removal tools
+
+### ✈️ Impossible Travel
+
+- Authentication logs can be telling
+- Multiple logins from very different places should raise alarms
+- Should be easy to identify
+
+### 🖥️ Resource Consumption
+
+- Every attacker's action has an equal and opposite reaction
+	- Watch carefully for significant changes
+- File transfers use bandwidth
+	- Unusual spike
+- Firewall logs show the outgoing transfer 
+	- IP addresses, timeframes
+- Often the first real notification of an issue
+	- Attacker may have been there for a long time
+- Inaccessibility
+	- Servers down
+	- Network disruption
+		- Cover for other exploits
+	- Server outage
+		- Result of exploit gone wrong
+	- Encrypted data
+		- Ransomware
+	- Brute force
+		- Lockout
+
+### 🚲 Out-of-cycle logging
+
+- Occurs at an unexpected time
+- Operating system patch logs
+	- Occurring outside of normal patch times
+	- Keep the system safe from attackers
+- Firewall logging activity
+	- Timestamps of every traffic flow
+	- Protocols and applications used
+
+### 🌲 Missing Logs
+
+- Log information is evidence
+	- Attackers will try to cover tracks
+- Information is everywhere
+	- Auth logs
+	- File Access logs
+	- Firewall logs
+	- Server logs
+	- Proxy logs
+- Logs might be incriminating
+	- Missing logs are suspicious
+	- Logs should be secured and monitored
+
+### 🖊️ Published / Documented
+
+- Entire attack and data exfil may go unnoticed
+- Company data may be published online
+	- May be in conjunction with ransomware
+- Raw data may be released without context
+	- Researchers will try to find source
+
+
+
+
+
+
