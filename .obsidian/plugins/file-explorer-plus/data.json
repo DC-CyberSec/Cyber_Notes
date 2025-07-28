@@ -29,7 +29,7 @@
         "name": "",
         "active": true,
         "type": "DIRECTORIES",
-        "pattern": "security_plus",
+        "pattern": "Security+",
         "patternType": "STRICT"
       }
     ],
