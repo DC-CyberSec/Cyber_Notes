@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Security+/Syo-701/Section 3/Section 3.1.md",
+                "file": "Programming/Python/Computing.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Section 3.1"
+              "title": "Computing"
             }
           }
         ]
@@ -222,13 +222,13 @@
     "Security+/Syo-701/Section 2/Section 2.3.md",
     "Security+/Syo-701/Section 2/Section 2.1.md",
     "Security+/Syo-701/Section 2/Section 2.2.md",
-    "Programming/Python/python_computing.md",
-    "Programming/Python/python_basics.md",
+    "Programming/Python/Computing.md",
+    "Programming/Python/Basics.md",
     "Security+/Syo-701/Section 1/Section 1.2.md",
-    "Programming/Python/python_scope.md",
-    "Programming/Python/python_variables.md",
-    "Programming/Python/python_testing.debugging.md",
-    "Programming/Python/python_functions.md",
+    "Programming/Python/Scope.md",
+    "Programming/Python/Variables.md",
+    "Programming/Python/Testing.Debugging.md",
+    "Programming/Python/Functions.md",
     "Security+/Syo-701/Section 1/Section 1.4.md",
     "Security+/Syo-701/Section 1/Section 1.3.md",
     "Security+/Syo-701/Section 1/Section 1.1.md",
