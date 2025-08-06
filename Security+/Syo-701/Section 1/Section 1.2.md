@@ -163,6 +163,11 @@
 - Control Plane
 	- Manages the actions of data plane
 	- Policies, rules, configurations
+	- Routing tables, session tables, NAT tables
+	- Dynamic routing protocols
+- Management Plane
+	- Configure and manage device
+	- SSH, Browser, API
 - Separate into functional tasks
 	- Incorporate into hardware and software
 
